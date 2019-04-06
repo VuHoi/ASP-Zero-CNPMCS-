@@ -20365,3 +20365,411 @@ System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-s
    at Abp.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e) in D:\Github\aspnetboilerplate\src\Abp\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 48
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:-1,State:0,Class:20
+DEBUG 2019-04-05 20:29:15,746 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-04-05 20:29:15,769 [1    ] Abp.Modules.AbpModuleManager             - Found 27 ABP modules in total.
+DEBUG 2019-04-05 20:29:15,792 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GSoft.AbpZeroTemplate.Web.Startup.AbpZeroTemplateWebHostModule, GSoft.AbpZeroTemplate.Web.Host, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,795 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GSoft.AbpZeroTemplate.Web.AbpZeroTemplateWebCoreModule, GSoft.AbpZeroTemplate.Web.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,795 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GSoft.AbpZeroTemplate.AbpZeroTemplateApplicationModule, GSoft.AbpZeroTemplate.Application, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,795 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GSoft.AbpZeroTemplate.AbpZeroTemplateCoreModule, GSoft.AbpZeroTemplate.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,796 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,796 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,796 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,796 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.Ldap.AbpZeroLdapModule, Abp.Zero.Ldap, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,797 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,797 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetZeroCore.AbpAspNetZeroCoreModule, Abp.AspNetZeroCore, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,797 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.MailKit.AbpMailKitModule, Abp.MailKit, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,797 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GWebsite.AbpZeroTemplate.Application.GWebsiteApplicationModule, GWebsite.AbpZeroTemplate.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GSoft.AbpZeroTemplate.EntityFrameworkCore.AbpZeroTemplateEntityFrameworkCoreModule, GSoft.AbpZeroTemplate.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GWebsite.AbpZeroTemplate.EntityFrameworkCore.GWebsiteEntityFrameworkCoreModule, GWebsite.AbpZeroTemplate.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,798 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.IdentityServer4.AbpZeroCoreIdentityServerEntityFrameworkCoreModule, Abp.ZeroCore.IdentityServer4.EntityFrameworkCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.IdentityServer4.AbpZeroCoreIdentityServerModule, Abp.ZeroCore.IdentityServer4, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GWebsite.AbpZeroTemplate.Application.GWebsiteCoreModule, GWebsite.AbpZeroTemplate.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetZeroCore.Web.AbpAspNetZeroCoreWebModule, Abp.AspNetZeroCore.Web, Version=1.1.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,799 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Runtime.Caching.Redis.AbpRedisCacheModule, Abp.RedisCache, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireAspNetCoreModule, Abp.HangFire.AspNetCore, Version=3.7.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,800 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GWebsite.AbpZeroTemplate.Web.Core.GWebsiteWebCoreModule, GWebsite.AbpZeroTemplate.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:15,803 [1    ] Abp.Modules.AbpModuleManager             - 27 modules loaded.
+DEBUG 2019-04-05 20:29:15,882 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-04-05 20:29:15,882 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-04-05 20:29:15,882 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZeroTemplate (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-04-05 20:29:15,883 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-04-05 20:29:16,141 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GSoft.AbpZeroTemplate.EntityFrameworkCore.AbpZeroTemplateDbContext, GSoft.AbpZeroTemplate.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-04-05 20:29:16,621 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-04-05 20:29:16,645 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-04-05 20:29:16,658 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-04-05 20:29:16,687 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZeroTemplate
+DEBUG 2019-04-05 20:29:16,693 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-04-05 20:29:16,721 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2019-04-05 20:29:16,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 2 classes define auto mapping attributes
+DEBUG 2019-04-05 20:29:16,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GSoft.AbpZeroTemplate.Web.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-04-05 20:29:16,790 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GSoft.AbpZeroTemplate.Friendships.Cache.FriendCacheItem
+DEBUG 2019-04-05 20:29:20,440 [1    ] enancy.SubscriptionExpirationCheckWorker - Start background worker: GSoft.AbpZeroTemplate.MultiTenancy.SubscriptionExpirationCheckWorker
+DEBUG 2019-04-05 20:29:20,442 [1    ] cy.SubscriptionExpireEmailNotifierWorker - Start background worker: GSoft.AbpZeroTemplate.MultiTenancy.SubscriptionExpireEmailNotifierWorker
+INFO  2019-04-05 20:29:21,536 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/  
+INFO  2019-04-05 20:29:22,050 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing action GSoft.AbpZeroTemplate.Web.Controllers.HomeController.Index (GSoft.AbpZeroTemplate.Web.Host)
+INFO  2019-04-05 20:29:22,118 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Web.Controllers.HomeController.Index (GSoft.AbpZeroTemplate.Web.Host) - Validation state: Valid
+INFO  2019-04-05 20:29:22,125 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Web.Controllers.HomeController.Index (GSoft.AbpZeroTemplate.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 3.5295ms.
+INFO  2019-04-05 20:29:22,156 [13   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2019-04-05 20:29:22,164 [13   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Web.Controllers.HomeController.Index (GSoft.AbpZeroTemplate.Web.Host) in 111.2711ms
+INFO  2019-04-05 20:29:22,214 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 680.8419ms 302 
+INFO  2019-04-05 20:29:22,266 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html  
+INFO  2019-04-05 20:29:22,317 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 50.52ms 200 text/html
+INFO  2019-04-05 20:29:22,357 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-04-05 20:29:22,366 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-04-05 20:29:22,366 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-04-05 20:29:22,388 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-04-05 20:29:22,388 [16   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-04-05 20:29:22,388 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-04-05 20:29:22,392 [16   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 34.8105ms 304 text/css
+INFO  2019-04-05 20:29:22,392 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.7269ms 304 application/javascript
+INFO  2019-04-05 20:29:22,392 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 25.5577ms 304 application/javascript
+INFO  2019-04-05 20:29:23,389 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-04-05 20:29:23,396 [13   ] uthentication.JwtBearer.JwtBearerHandler - Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token: null
+INFO  2019-04-05 20:29:23,865 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 475.8789ms 200 application/json;charset=utf-8
+INFO  2019-04-05 20:41:31,933 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/AbpUserConfiguration/GetAll  
+INFO  2019-04-05 20:41:31,957 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:31,966 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.9385ms 204 
+INFO  2019-04-05 20:41:32,006 [43   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpUserConfiguration/GetAll application/json 
+INFO  2019-04-05 20:41:32,007 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+WARN  2019-04-05 20:41:32,015 [43   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:41:32,015 [43   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:41:32,028 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-04-05 20:41:32,028 [43   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:32,036 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-04-05 20:41:32,314 [43   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 277.6937ms.
+INFO  2019-04-05 20:41:32,533 [48   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:41:32,582 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 553.4596ms
+INFO  2019-04-05 20:41:32,582 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 575.9075ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:41:32,635 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-04-05 20:41:32,635 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:32,635 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3052ms 204 
+INFO  2019-04-05 20:41:32,677 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2019-04-05 20:41:32,677 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:32,711 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:41:32,711 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:32,731 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:41:32,736 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.1094ms.
+INFO  2019-04-05 20:41:32,753 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:41:32,768 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) in 57.1395ms
+INFO  2019-04-05 20:41:32,768 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 91.1575ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:41:33,434 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/TokenAuth/GetExternalAuthenticationProviders  
+INFO  2019-04-05 20:41:33,434 [45   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:33,434 [45   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2148ms 204 
+INFO  2019-04-05 20:41:33,538 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/TokenAuth/GetExternalAuthenticationProviders application/json 
+INFO  2019-04-05 20:41:33,538 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:33,544 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetExternalAuthenticationProviders", controller = "TokenAuth", area = ""}. Executing action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.GetExternalAuthenticationProviders (GSoft.AbpZeroTemplate.Web.Core)
+INFO  2019-04-05 20:41:33,544 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:33,684 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.GetExternalAuthenticationProviders (GSoft.AbpZeroTemplate.Web.Core) - Validation state: Valid
+INFO  2019-04-05 20:41:33,703 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.GetExternalAuthenticationProviders (GSoft.AbpZeroTemplate.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 19.2896ms.
+INFO  2019-04-05 20:41:33,709 [48   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:41:33,709 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.GetExternalAuthenticationProviders (GSoft.AbpZeroTemplate.Web.Core) in 165.2334ms
+INFO  2019-04-05 20:41:33,709 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 171.2181ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:41:41,906 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/TokenAuth/Authenticate  
+INFO  2019-04-05 20:41:41,906 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:41,906 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1503ms 204 
+INFO  2019-04-05 20:41:41,910 [48   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/api/TokenAuth/Authenticate application/json 150
+INFO  2019-04-05 20:41:41,910 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:41,928 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core)
+INFO  2019-04-05 20:41:41,928 [48   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:41:42,074 [48   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) with arguments (GSoft.AbpZeroTemplate.Web.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+WARN  2019-04-05 20:41:42,314 [45   ] Template.Authorization.Users.UserManager - Invalid password for user 1.
+WARN  2019-04-05 20:41:43,070 [50   ] Mvc.ExceptionHandling.AbpExceptionFilter - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.GetLoginResultAsync(String usernameOrEmailAddress, String password, String tenancyName) in F:\aspnet-core\src\GSoft.AbpZeroTemplate.Web.Core\Controllers\TokenAuthController.cs:line 515
+   at GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate(AuthenticateModel model) in F:\aspnet-core\src\GSoft.AbpZeroTemplate.Web.Core\Controllers\TokenAuthController.cs:line 106
+   at lambda_method(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+INFO  2019-04-05 20:41:43,087 [50   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:41:43,090 [50   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) in 1161.3535ms
+INFO  2019-04-05 20:41:43,090 [50   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 1180.2497ms 500 application/json; charset=utf-8
+INFO  2019-04-05 20:45:35,010 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/TokenAuth/Authenticate  
+INFO  2019-04-05 20:45:35,010 [58   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:35,011 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2026ms 204 
+INFO  2019-04-05 20:45:35,014 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/api/TokenAuth/Authenticate application/json 151
+INFO  2019-04-05 20:45:35,014 [58   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:35,018 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core)
+INFO  2019-04-05 20:45:35,018 [58   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:35,027 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) with arguments (GSoft.AbpZeroTemplate.Web.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-04-05 20:45:35,473 [62   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 445.7843ms.
+INFO  2019-04-05 20:45:35,520 [62   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:45:35,527 [62   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) in 509.0903ms
+INFO  2019-04-05 20:45:35,528 [62   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 513.7887ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:45:56,054 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Account/ResetPassword  
+INFO  2019-04-05 20:45:56,054 [65   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,054 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1474ms 204 
+INFO  2019-04-05 20:45:56,057 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/api/services/app/Account/ResetPassword application/json 62
+INFO  2019-04-05 20:45:56,057 [65   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,072 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "ResetPassword", controller = "Account"}. Executing action GSoft.AbpZeroTemplate.Authorization.Accounts.AccountAppService.ResetPassword (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:45:56,072 [65   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,153 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Authorization.Accounts.AccountAppService.ResetPassword (GSoft.AbpZeroTemplate.Application) with arguments (GSoft.AbpZeroTemplate.Authorization.Accounts.Dto.ResetPasswordInput) - Validation state: Valid
+INFO  2019-04-05 20:45:56,193 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Authorization.Accounts.AccountAppService.ResetPassword (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 40.0745ms.
+INFO  2019-04-05 20:45:56,208 [63   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:45:56,209 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Authorization.Accounts.AccountAppService.ResetPassword (GSoft.AbpZeroTemplate.Application) in 136.9567ms
+INFO  2019-04-05 20:45:56,209 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 152.3667ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:45:56,232 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/TokenAuth/Authenticate  
+INFO  2019-04-05 20:45:56,232 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,232 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1314ms 204 
+INFO  2019-04-05 20:45:56,240 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/api/TokenAuth/Authenticate application/json 154
+INFO  2019-04-05 20:45:56,240 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,246 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core)
+INFO  2019-04-05 20:45:56,246 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:56,265 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) with arguments (GSoft.AbpZeroTemplate.Web.Models.TokenAuth.AuthenticateModel) - Validation state: Valid
+INFO  2019-04-05 20:45:56,406 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 140.3095ms.
+INFO  2019-04-05 20:45:56,417 [64   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:45:56,417 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Web.Controllers.TokenAuthController.Authenticate (GSoft.AbpZeroTemplate.Web.Core) in 170.5605ms
+INFO  2019-04-05 20:45:56,417 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 177.2819ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:45:59,470 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/AbpUserConfiguration/GetAll  
+INFO  2019-04-05 20:45:59,470 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:59,470 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2882ms 204 
+INFO  2019-04-05 20:45:59,510 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/AbpUserConfiguration/GetAll application/json 
+INFO  2019-04-05 20:45:59,510 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:59,549 [66   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:45:59,672 [65   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:45:59,672 [65   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:45:59,672 [65   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:45:59,672 [65   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:45:59,680 [66   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:45:59,680 [66   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:45:59,701 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpUserConfiguration", area = ""}. Executing action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore)
+INFO  2019-04-05 20:45:59,701 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:45:59,703 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) - Validation state: Valid
+INFO  2019-04-05 20:45:59,902 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore), returned result Microsoft.AspNetCore.Mvc.JsonResult in 199.2608ms.
+INFO  2019-04-05 20:45:59,907 [64   ] matters.Json.Internal.JsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:45:59,909 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpUserConfigurationController.GetAll (Abp.AspNetCore) in 208.2046ms
+INFO  2019-04-05 20:45:59,910 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 400.2198ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:00,036 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Session/GetCurrentLoginInformations  
+INFO  2019-04-05 20:46:00,036 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:00,036 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1647ms 204 
+INFO  2019-04-05 20:46:00,057 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2019-04-05 20:46:00,057 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:00,057 [57   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:00,057 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:00,057 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:00,057 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:00,057 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:00,060 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:00,060 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:00,065 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:00,074 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 8.9098ms.
+INFO  2019-04-05 20:46:00,074 [57   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:00,076 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) in 16.0079ms
+INFO  2019-04-05 20:46:00,076 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 19.6467ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:02,565 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Session/GetCurrentLoginInformations application/json 
+INFO  2019-04-05 20:46:02,565 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,566 [63   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:02,566 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,566 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,566 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,566 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:02,569 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Profile/GetProfilePicture  
+INFO  2019-04-05 20:46:02,570 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,570 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.193ms 204 
+INFO  2019-04-05 20:46:02,573 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetCurrentLoginInformations", controller = "Session"}. Executing action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,573 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,575 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/UserLink/GetRecentlyUsedLinkedUsers  
+INFO  2019-04-05 20:46:02,575 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,575 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1317ms 204 
+INFO  2019-04-05 20:46:02,580 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:02,581 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Notification/GetUserNotifications?MaxResultCount=3&SkipCount=0  
+INFO  2019-04-05 20:46:02,581 [66   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,581 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.184ms 204 
+INFO  2019-04-05 20:46:02,582 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.6712ms.
+INFO  2019-04-05 20:46:02,583 [63   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:02,583 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Sessions.SessionAppService.GetCurrentLoginInformations (GSoft.AbpZeroTemplate.Application) in 10.8129ms
+INFO  2019-04-05 20:46:02,584 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 18.306ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:02,595 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/UserLink/GetLinkedUsers?MaxResultCount=10&SkipCount=0  
+INFO  2019-04-05 20:46:02,595 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,596 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1298ms 204 
+INFO  2019-04-05 20:46:02,679 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Profile/GetProfilePicture  
+INFO  2019-04-05 20:46:02,679 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,679 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1529ms 204 
+INFO  2019-04-05 20:46:02,918 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/Chat/GetUserChatFriendsWithSettings  
+INFO  2019-04-05 20:46:02,918 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0  
+INFO  2019-04-05 20:46:02,919 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,919 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,919 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.3574ms 204 
+INFO  2019-04-05 20:46:02,919 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.235ms 204 
+INFO  2019-04-05 20:46:02,920 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/signalr-chat/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0  
+INFO  2019-04-05 20:46:02,921 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,921 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.2042ms 204 
+INFO  2019-04-05 20:46:02,935 [63   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Profile/GetProfilePicture application/json 
+INFO  2019-04-05 20:46:02,935 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,936 [63   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:02,936 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,936 [63   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,936 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,936 [63   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:02,937 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/UserLink/GetRecentlyUsedLinkedUsers application/json 
+INFO  2019-04-05 20:46:02,937 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,937 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Notification/GetUserNotifications?MaxResultCount=3&SkipCount=0 application/json 
+INFO  2019-04-05 20:46:02,937 [64   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,938 [57   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-04-05 20:46:02,938 [64   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:02,938 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,938 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,938 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,938 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:02,941 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/UserLink/GetLinkedUsers?MaxResultCount=10&SkipCount=0 application/json 
+INFO  2019-04-05 20:46:02,941 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,942 [61   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-04-05 20:46:02,942 [65   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Profile/GetProfilePicture application/json 
+INFO  2019-04-05 20:46:02,942 [65   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,942 [65   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:02,942 [65   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,942 [65   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [65   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [65   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [61   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [61   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [61   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:02,943 [61   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:02,945 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfilePicture", controller = "Profile"}. Executing action GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,945 [63   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,947 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetRecentlyUsedLinkedUsers", controller = "UserLink"}. Executing action GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetRecentlyUsedLinkedUsers (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,947 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,952 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetProfilePicture", controller = "Profile"}. Executing action GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,952 [65   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,977 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetUserNotifications", controller = "Notification"}. Executing action GSoft.AbpZeroTemplate.Notifications.NotificationAppService.GetUserNotifications (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,977 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetLinkedUsers", controller = "UserLink"}. Executing action GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetLinkedUsers (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:02,977 [64   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,977 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:02,985 [65   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:02,985 [63   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:03,004 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetRecentlyUsedLinkedUsers (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:03,008 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.694ms.
+INFO  2019-04-05 20:46:03,008 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.7136ms.
+INFO  2019-04-05 20:46:03,009 [58   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,009 [66   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,009 [58   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application) in 57.1164ms
+INFO  2019-04-05 20:46:03,009 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Authorization.Users.Profile.ProfileAppService.GetProfilePicture (GSoft.AbpZeroTemplate.Application) in 64.269ms
+INFO  2019-04-05 20:46:03,010 [58   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 67.7283ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,010 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 74.6446ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,025 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Notifications.NotificationAppService.GetUserNotifications (GSoft.AbpZeroTemplate.Application) with arguments (GSoft.AbpZeroTemplate.Notifications.Dto.GetUserNotificationsInput) - Validation state: Valid
+INFO  2019-04-05 20:46:03,026 [61   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetLinkedUsers (GSoft.AbpZeroTemplate.Application) with arguments (GSoft.AbpZeroTemplate.Authorization.Users.Dto.GetLinkedUsersInput) - Validation state: Valid
+INFO  2019-04-05 20:46:03,160 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Notifications.NotificationAppService.GetUserNotifications (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 134.2572ms.
+INFO  2019-04-05 20:46:03,160 [64   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,162 [64   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Notifications.NotificationAppService.GetUserNotifications (GSoft.AbpZeroTemplate.Application) in 185.5509ms
+INFO  2019-04-05 20:46:03,163 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 225.1061ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,169 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/services/app/HostDashboard/GetDashboardStatisticsData?IncomeStatisticsDateInterval=1&StartDate=2019-03-28T17%3A00%3A00.000Z&EndDate=2019-04-05T16%3A59%3A59.999Z  
+INFO  2019-04-05 20:46:03,169 [69   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,169 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 0.1545ms 204 
+INFO  2019-04-05 20:46:03,233 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/Chat/GetUserChatFriendsWithSettings application/json 
+INFO  2019-04-05 20:46:03,233 [69   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,233 [69   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:03,234 [69   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,234 [69   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,234 [69   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,234 [69   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:03,234 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0 text/plain;charset=UTF-8 0
+INFO  2019-04-05 20:46:03,234 [64   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,234 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:5000/signalr-chat/negotiate?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0 text/plain;charset=UTF-8 0
+INFO  2019-04-05 20:46:03,234 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,238 [69   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetUserChatFriendsWithSettings", controller = "Chat"}. Executing action GSoft.AbpZeroTemplate.Chat.ChatAppService.GetUserChatFriendsWithSettings (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:03,238 [57   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+INFO  2019-04-05 20:46:03,238 [69   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,238 [64   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:03,238 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,238 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:03,264 [69   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.Chat.ChatAppService.GetUserChatFriendsWithSettings (GSoft.AbpZeroTemplate.Application) - Validation state: Valid
+INFO  2019-04-05 20:46:03,281 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 47.4323ms 200 application/json
+INFO  2019-04-05 20:46:03,281 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 47.02ms 200 application/json
+INFO  2019-04-05 20:46:03,315 [57   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/services/app/HostDashboard/GetDashboardStatisticsData?IncomeStatisticsDateInterval=1&StartDate=2019-03-28T17%3A00%3A00.000Z&EndDate=2019-04-05T16%3A59%3A59.999Z application/json 
+INFO  2019-04-05 20:46:03,315 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,316 [57   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:03,316 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,316 [57   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,316 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,316 [57   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:03,329 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {area = "app", action = "GetDashboardStatisticsData", controller = "HostDashboard"}. Executing action GSoft.AbpZeroTemplate.MultiTenancy.HostDashboard.HostDashboardAppService.GetDashboardStatisticsData (GSoft.AbpZeroTemplate.Application)
+INFO  2019-04-05 20:46:03,329 [57   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,355 [64   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr-chat?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0&id=tmyyYxmsL8Y7HTWAW_ddgA  
+INFO  2019-04-05 20:46:03,355 [64   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,357 [64   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:03,358 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,358 [64   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,358 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,358 [64   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:03,361 [57   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GSoft.AbpZeroTemplate.MultiTenancy.HostDashboard.HostDashboardAppService.GetDashboardStatisticsData (GSoft.AbpZeroTemplate.Application) with arguments (GSoft.AbpZeroTemplate.MultiTenancy.HostDashboard.Dto.GetDashboardDataInput) - Validation state: Valid
+INFO  2019-04-05 20:46:03,381 [69   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Chat.ChatAppService.GetUserChatFriendsWithSettings (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 117.7517ms.
+INFO  2019-04-05 20:46:03,382 [69   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,383 [69   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Chat.ChatAppService.GetUserChatFriendsWithSettings (GSoft.AbpZeroTemplate.Application) in 144.8329ms
+INFO  2019-04-05 20:46:03,383 [69   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 150.3764ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,425 [61   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/signalr?enc_auth_token=wNYmO41%2F48SHNstaLVXxHCCre29BZQl1NhC6NM3R3rzpXtPQxVzH6jEzA%2FQhXFN5tu6Fk7pO53uppm1mVXMZgxbyRVz26dnepi%2FFyB6axBY%2B6gq1GL%2BuRQgoiFUCjRN2p8w6LevViwKlHyWZZJZO1DGVSjAi1m2U%2Bog9pkHw9%2FQR4Nl%2FDPnoP9JYDMpZ1zxx09u6s0GZ9%2FQ5Sjk%2BL0UfcSCbl38X8he5w9UIn%2FHvxh7ysM1CiPLsoOwtbiieSRVmrmt0JjnipAn4%2FK283F8GrGwzwgehWsqefmUnM0ckMwP9ZAdwQxWDhxv0IqNw4tDhwUYs%2F1SYdYozdNzgByhgNOBPzQDObNLlWc4vV5VMOibRZpWE1J5w18TG0sKa0BuSX4rreLCEKcVuri%2BvzDF7AcTZFfJBHxk9Av6wq6a6Mp97YBsy8ZFusfs6HfHx%2Bh%2Fs9i9iBDdzrMErWuUMH3vhnKg0mFCDugTP15%2BXUNvlLKbf1dsm80v19odU%2B4J2tRghT9lLpP7DEKzaJZcLtnkgJc%2Fe5ZgeMXR4gNU4VJmTpnPlKfz9d9%2BMG0bw18oASmAQCBAMtEPzoLfb1AlbZ7S8cfKEPC6CddlzmczhInf9N5S0nqnbj%2BrnFDUmdqo90RfFIBk8AaRqqO6%2BJMXZWgokSw%2FbSWHYHdn%2BfggWjTBLqbpIn0EtNwETqYeV6NoLtqFKdk8PK8eOFXau7sV9dlE%2B1ZmVjmnMnO3D98b4lJlHyOcVNgZtilMRPlkMkqBxYzNZ9XPPA6JTmngIQYqSLEHfI6qg5jE5AGMCGG9Gg4GxUKMnyRqif6%2FZCLHIVpRm%2BgzhHHQufFUyZLsd%2BxWr1j%2BH4rbZJRaYBMY3vdqKMSn2yQgFk1hZdfgd1idZvy%2FTKD%2F0&id=_fFWUlCZ8nuItd2uJQMpYw  
+INFO  2019-04-05 20:46:03,425 [61   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution successful.
+INFO  2019-04-05 20:46:03,427 [61   ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-05 20:46:03,427 [61   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,427 [61   ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-05 20:46:03,427 [61   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-05 20:46:03,427 [61   ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-05 20:46:03,512 [58   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+INFO  2019-04-05 20:46:03,512 [57   ] .AspNetCore.SignalR.HubConnectionContext - Completed connection handshake. Using HubProtocol 'json'.
+DEBUG 2019-04-05 20:46:03,540 [57   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"_fFWUlCZ8nuItd2uJQMpYw","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-04-05T20:46:03.5363497+07:00","Properties":{}}
+DEBUG 2019-04-05 20:46:03,551 [58   ] AbpZeroTemplate.Web.Chat.SignalR.ChatHub - A client is connected: {"ConnectionId":"tmyyYxmsL8Y7HTWAW_ddgA","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-04-05T20:46:03.546699+07:00","Properties":{}}
+DEBUG 2019-04-05 20:46:03,595 [57   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: _fFWUlCZ8nuItd2uJQMpYw
+INFO  2019-04-05 20:46:03,760 [76   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.MultiTenancy.HostDashboard.HostDashboardAppService.GetDashboardStatisticsData (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 399.2449ms.
+INFO  2019-04-05 20:46:03,761 [76   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,769 [76   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.MultiTenancy.HostDashboard.HostDashboardAppService.GetDashboardStatisticsData (GSoft.AbpZeroTemplate.Application) in 439.6605ms
+INFO  2019-04-05 20:46:03,769 [76   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 453.8943ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,815 [68   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetRecentlyUsedLinkedUsers (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 811.1606ms.
+INFO  2019-04-05 20:46:03,816 [68   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,817 [68   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetRecentlyUsedLinkedUsers (GSoft.AbpZeroTemplate.Application) in 869.9038ms
+INFO  2019-04-05 20:46:03,817 [68   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 880.1617ms 200 application/json; charset=utf-8
+INFO  2019-04-05 20:46:03,822 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action method GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetLinkedUsers (GSoft.AbpZeroTemplate.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 796.0936ms.
+INFO  2019-04-05 20:46:03,825 [66   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-05 20:46:03,826 [66   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GSoft.AbpZeroTemplate.Authorization.Users.UserLinkAppService.GetLinkedUsers (GSoft.AbpZeroTemplate.Application) in 848.7511ms
+INFO  2019-04-05 20:46:03,826 [66   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 884.906ms 200 application/json; charset=utf-8
+DEBUG 2019-04-05 22:57:05,257 [128  ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: _fFWUlCZ8nuItd2uJQMpYw
+DEBUG 2019-04-05 22:57:05,266 [127  ] AbpZeroTemplate.Web.Chat.SignalR.ChatHub - A client is disconnected: tmyyYxmsL8Y7HTWAW_ddgA
+INFO  2019-04-05 22:57:05,273 [128  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7861911.4809ms 101 
+INFO  2019-04-05 22:57:05,302 [127  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 7862010.6821ms 101 
+INFO  2019-04-06 00:10:41,007 [149  ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css  
+INFO  2019-04-06 00:10:41,007 [84   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js  
+INFO  2019-04-06 00:10:41,007 [142  ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js  
+INFO  2019-04-06 00:10:41,013 [149  ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.css was not modified
+INFO  2019-04-06 00:10:41,013 [142  ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-standalone-preset.js was not modified
+INFO  2019-04-06 00:10:41,013 [84   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui-bundle.js was not modified
+INFO  2019-04-06 00:10:41,013 [84   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.0507ms 304 application/javascript
+INFO  2019-04-06 00:10:41,013 [142  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.6727ms 304 application/javascript
+INFO  2019-04-06 00:10:41,013 [149  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 6.3982ms 304 text/css
+INFO  2019-04-06 00:10:41,739 [140  ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json  
+INFO  2019-04-06 00:10:41,740 [140  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-06 00:10:41,748 [140  ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-06 00:10:41,748 [140  ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-06 00:10:41,748 [140  ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-06 00:10:41,748 [140  ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-06 00:10:41,826 [135  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 87.3706ms 200 application/json;charset=utf-8
+INFO  2019-04-06 00:11:18,149 [135  ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:5000/api/MenuClient/GetMenuClientsByFilter?name=f&sorting=f&skipCount=1&maxResultCount=2  
+INFO  2019-04-06 00:11:18,149 [135  ] uthentication.JwtBearer.JwtBearerHandler - Successfully validated the token.
+WARN  2019-04-06 00:11:18,150 [135  ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-06 00:11:18,150 [135  ] calization.RequestLocalizationMiddleware - AbpUserRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+WARN  2019-04-06 00:11:18,150 [135  ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-04-06 00:11:18,150 [135  ] calization.RequestLocalizationMiddleware - AbpDefaultRequestCultureProvider returned the following unsupported UI Cultures 'null'.
+INFO  2019-04-06 00:11:18,160 [135  ] ore.Mvc.Internal.ControllerActionInvoker - Route matched with {action = "GetMenuClientsByFilter", controller = "MenuClient", area = ""}. Executing action GWebsite.AbpZeroTemplate.Application.Controllers.MenuClientController.GetMenuClientsByFilter (GWebsite.AbpZeroTemplate.Web.Core)
+INFO  2019-04-06 00:11:18,251 [135  ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method GWebsite.AbpZeroTemplate.Application.Controllers.MenuClientController.GetMenuClientsByFilter (GWebsite.AbpZeroTemplate.Web.Core) with arguments (f, f, 1, 2) - Validation state: Valid
+ERROR 2019-04-06 00:11:18,561 [135  ] Mvc.ExceptionHandling.AbpExceptionFilter - No property or field 'f' exists in type 'MenuClient'
+No property or field 'f' exists in type 'MenuClient' (at index 0)
+INFO  2019-04-06 00:11:18,610 [135  ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-04-06 00:11:18,611 [135  ] ore.Mvc.Internal.ControllerActionInvoker - Executed action GWebsite.AbpZeroTemplate.Application.Controllers.MenuClientController.GetMenuClientsByFilter (GWebsite.AbpZeroTemplate.Web.Core) in 450.3705ms
+INFO  2019-04-06 00:11:18,611 [135  ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 461.9901ms 500 application/json; charset=utf-8
