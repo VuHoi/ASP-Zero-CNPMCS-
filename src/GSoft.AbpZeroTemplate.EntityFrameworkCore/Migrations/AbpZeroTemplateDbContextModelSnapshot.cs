@@ -1619,9 +1619,14 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<int>("ProductId");
+
                     b.Property<string>("Url");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId")
+                        .IsUnique();
 
                     b.ToTable("Images");
                 });
@@ -1710,6 +1715,98 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("GPermissions");
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Product", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AddedDate");
+
+                    b.Property<string>("AvailableAddress");
+
+                    b.Property<double>("Discount");
+
+                    b.Property<string>("Name");
+
+                    b.Property<double>("Price");
+
+                    b.Property<string>("Summary");
+
+                    b.Property<int>("SupplierId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SupplierId");
+
+                    b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Purchase", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AppUserId");
+
+                    b.Property<DateTime>("AuthorizedDate");
+
+                    b.Property<string>("Comment");
+
+                    b.Property<DateTime>("RaisedDate");
+
+                    b.Property<DateTime>("ReceivedDate");
+
+                    b.Property<DateTime>("RequiredDate");
+
+                    b.Property<int>("Status");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.ToTable("Purchases");
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.PurchaseProduct", b =>
+                {
+                    b.Property<int>("ProductId");
+
+                    b.Property<int>("PurchaseId");
+
+                    b.Property<int>("Quantity");
+
+                    b.HasKey("ProductId", "PurchaseId");
+
+                    b.HasIndex("PurchaseId");
+
+                    b.ToTable("PurchaseProducts");
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Supplier", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address");
+
+                    b.Property<string>("Contact");
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("Fax");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Phone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Suppliers");
                 });
 
             modelBuilder.Entity("GSoft.AbpZeroTemplate.Editions.SubscribableEdition", b =>
@@ -1969,6 +2066,14 @@ namespace GSoft.AbpZeroTemplate.Migrations
                         .HasConstraintName("FK_dbo.Functions_dbo.Functions_ParentId");
                 });
 
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Image", b =>
+                {
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Product", "Product")
+                        .WithOne("Image")
+                        .HasForeignKey("GWebsite.AbpZeroTemplate.Core.Models.Image", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Permission", b =>
                 {
                     b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Function", "Function")
@@ -1980,6 +2085,35 @@ namespace GSoft.AbpZeroTemplate.Migrations
                         .WithMany("Permissions")
                         .HasForeignKey("RoleId")
                         .HasConstraintName("FK_dbo.Permissions_dbo.AppRoles_RoleId");
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Product", b =>
+                {
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Supplier", "Supplier")
+                        .WithMany("Products")
+                        .HasForeignKey("SupplierId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Purchase", b =>
+                {
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.AppUser", "AppUser")
+                        .WithMany("Purchases")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.PurchaseProduct", b =>
+                {
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Product", "Product")
+                        .WithMany("PurchaseProducts")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Purchase", "Purchase")
+                        .WithMany("PurchaseProducts")
+                        .HasForeignKey("PurchaseId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Abp.Application.Features.EditionFeatureSetting", b =>

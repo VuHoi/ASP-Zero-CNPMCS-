@@ -49,7 +49,7 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
+
             modelBuilder.Entity<Announcement>(entity =>
             {
                 //entity.HasIndex(e => e.UserId)
@@ -235,6 +235,12 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
                 entity.Property(e => e.SignContractDt)
                     .HasColumnName("SignContractDT")
                     .HasColumnType("datetime");
+
+                entity
+                     .HasMany(p => p.Purchases)
+                      .WithOne(i => i.AppUser)
+                      .HasForeignKey(i => i.AppUserId)
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Function>(entity =>
@@ -297,8 +303,41 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
 
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
             });
+            // configuration for product entity
+            modelBuilder.Entity<Image>(entity =>
+            {
+                entity
+                .HasOne(i => i.Product)
+                .WithOne(p => p.Image)
+                .HasForeignKey<Image>(i => i.ProductId)
+                .OnDelete(DeleteBehavior.Cascade);
 
+            });
+            modelBuilder.Entity<Supplier>(entity =>
+            {
+                entity
+               .HasMany(p => p.Products)
+                .WithOne(i => i.Supplier)
+                .HasForeignKey(i => i.SupplierId)
+                .OnDelete(DeleteBehavior.Cascade);
 
+            });
+            modelBuilder.Entity<PurchaseProduct>(entity =>
+            {
+                entity
+              .HasKey(oi => new { oi.ProductId, oi.PurchaseId });
+                entity
+                .HasOne(oi => oi.Product)
+                .WithMany(p => p.PurchaseProducts)
+                .HasForeignKey(ot => ot.ProductId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+                entity
+                    .HasOne(oi => oi.Purchase)
+                    .WithMany(p => p.PurchaseProducts)
+                    .HasForeignKey(ot => ot.PurchaseId)
+                    .OnDelete(DeleteBehavior.Cascade);
+            });
             modelBuilder.Entity<Permission>(entity =>
             {
                 //entity.HasIndex(e => e.FunctionId)
