@@ -1592,7 +1592,7 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Department");
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Function", b =>
