@@ -9,6 +9,8 @@
         public const string Pages = "Pages";
         public const string Pages_Administration_GWebsite = "Pages.Administration.GWebsite";
 
+        public const string Pages_Administration_Product = "Pages.Administration.Product";
+
         public const string Pages_Administration_MenuClient = "Pages.Administration.MenuClient";
         public const string Pages_Administration_MenuClient_Create = "Pages.Administration.MenuClient.Create";
         public const string Pages_Administration_MenuClient_Edit = "Pages.Administration.MenuClient.Edit";

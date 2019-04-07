@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using GWebsite.AbpZeroTemplate.Application.Share.Product.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,12 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Product
 {
     public interface IProductAppService
     {
-        Task<ListResultDto<Product>> GetMenuClientsAsync();
+        Task<ListResultDto<ProductDto>> GetProductsAsync();
+
+        Task<ProductDto> GetProductAsync(int id);
 
 
 
-        Task<MenuClientDto> CreateMenuClientAsync(CreateMenuClientInput input);
 
-        Task<MenuClientDto> UpdateMenuClientAsync(UpdateMenuClientInput input);
-
-        Task DeleteMenuClientAsync(EntityDto<int> input);
     }
 }
