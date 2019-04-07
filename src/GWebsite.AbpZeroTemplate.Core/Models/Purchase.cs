@@ -14,6 +14,8 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
         public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
         public int Status { get; set; }
         public string Comment { get; set; }
+        public Department Department { get; set; }
+        public int DepartmentId { get; set; }
         public DateTime RaisedDate { get; set; }
         public DateTime AuthorizedDate { get; set; }
         public DateTime RequiredDate { get; set; }

@@ -1578,6 +1578,23 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.ToTable("DemoModels");
                 });
 
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Department", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Major");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Department");
+                });
+
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Function", b =>
                 {
                     b.Property<string>("Id")
@@ -1756,6 +1773,8 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
                     b.Property<string>("Comment");
 
+                    b.Property<int>("DepartmentId");
+
                     b.Property<DateTime>("RaisedDate");
 
                     b.Property<DateTime>("ReceivedDate");
@@ -1767,6 +1786,8 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
+
+                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Purchases");
                 });
@@ -2100,6 +2121,11 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.AppUser", "AppUser")
                         .WithMany("Purchases")
                         .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Department", "Department")
+                        .WithMany("Purchases")
+                        .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
