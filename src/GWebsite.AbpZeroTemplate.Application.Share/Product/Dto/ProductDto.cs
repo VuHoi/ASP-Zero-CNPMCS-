@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GWebsite.AbpZeroTemplate.Application.Share.Product.Dto
+namespace GWebsite.AbpZeroTemplate.Application.Share.Products.Dto
 {
     public partial class ProductDto
     {

@@ -4,6 +4,7 @@ using GWebsite.AbpZeroTemplate.Application;
 using GWebsite.AbpZeroTemplate.Application.Share.Purchases;
 using GWebsite.AbpZeroTemplate.Application.Share.Purchases.Dto;
 using GWebsite.AbpZeroTemplate.Core.Models;
+using GWebsite.AbpZeroTemplate.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace GWebsite.AbpZeroTemplate.Web.Core.Purchases
     {
 
         private readonly IRepository<Purchase, int> _purchaseRepository;
+
         public PurchaseAppService(IRepository<Purchase, int> purchaseRepository)
         {
             _purchaseRepository = purchaseRepository;
@@ -23,8 +25,8 @@ namespace GWebsite.AbpZeroTemplate.Web.Core.Purchases
 
         public async Task<ListResultDto<PurchaseDto>> GetPurchasesAsync()
         {
-            var items = await _purchaseRepository.GetAllListAsync();
-            return new ListResultDto<PurchaseDto>(
+            var items = _purchaseRepository.GetAllIncluding(p => p.PurchaseProducts, p => p.Department);
+            return  new ListResultDto<PurchaseDto>(
              items.Select(item => ObjectMapper.Map<PurchaseDto>(item)).ToList());
         }
     }

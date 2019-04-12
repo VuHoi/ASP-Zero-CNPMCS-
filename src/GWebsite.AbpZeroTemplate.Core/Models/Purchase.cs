@@ -1,4 +1,5 @@
 ﻿using Abp.Domain.Entities;
+using GSoft.AbpZeroTemplate.Authorization.Users;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,8 +10,7 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
 {
     public partial class Purchase : Entity<int>
     {
-        public string AppUserId { get; set; }
-        public AppUser AppUser { get; set; }
+        public User User { get; set; }
         public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
         public int Status { get; set; }
         public string Comment { get; set; }

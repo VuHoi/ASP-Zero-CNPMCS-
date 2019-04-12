@@ -2,8 +2,8 @@
 using Abp.Authorization;
 using Abp.Domain.Repositories;
 using GWebsite.AbpZeroTemplate.Application;
-using GWebsite.AbpZeroTemplate.Application.Share.Product;
-using GWebsite.AbpZeroTemplate.Application.Share.Product.Dto;
+using GWebsite.AbpZeroTemplate.Application.Share.Products;
+using GWebsite.AbpZeroTemplate.Application.Share.Products.Dto;
 using GWebsite.AbpZeroTemplate.Core.Authorization;
 using GWebsite.AbpZeroTemplate.Core.Models;
 using System;

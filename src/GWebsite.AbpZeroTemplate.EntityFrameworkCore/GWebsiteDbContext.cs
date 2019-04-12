@@ -237,11 +237,11 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
                     .HasColumnName("SignContractDT")
                     .HasColumnType("datetime");
 
-                entity
-                     .HasMany(p => p.Purchases)
-                      .WithOne(i => i.AppUser)
-                      .HasForeignKey(i => i.AppUserId)
-                      .OnDelete(DeleteBehavior.Cascade);
+                //entity
+                //     .HasMany(p => p.Purchases)
+                //      .WithOne(i => i.User)
+                //      .HasForeignKey(i => i.UserId)
+                //      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Function>(entity =>

@@ -1,6 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
-using GWebsite.AbpZeroTemplate.Application.Share.Product;
-using GWebsite.AbpZeroTemplate.Application.Share.Product.Dto;
+using GWebsite.AbpZeroTemplate.Application.Share.Products;
+using GWebsite.AbpZeroTemplate.Application.Share.Products.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
