@@ -18,6 +18,7 @@ import { DemoModelServiceProxy } from '@shared/service-proxies/service-proxies';
 import { CustomerComponent } from './customer/customer.component';
 import { ViewCustomerModalComponent } from './customer/view-customer-modal.component';
 import { CreateOrEditCustomerModalComponent } from './customer/create-or-edit-customer-modal.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
     imports: [
@@ -41,7 +42,7 @@ import { CreateOrEditCustomerModalComponent } from './customer/create-or-edit-cu
     declarations: [
         MenuClientComponent, CreateOrEditMenuClientModalComponent,
         DemoModelComponent, CreateOrEditDemoModelModalComponent, ViewDemoModelModalComponent,
-        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent,
+        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent,
     ],
     providers: [
         DemoModelServiceProxy,
