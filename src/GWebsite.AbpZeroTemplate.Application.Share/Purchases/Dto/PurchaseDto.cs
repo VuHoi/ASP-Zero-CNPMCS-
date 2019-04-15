@@ -14,7 +14,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Purchases.Dto
     {
         public int UserId { get; set; }
         public UserDto User { get; set; }
-        public ICollection<ProductResource> PurchaseProducts { get; set; }
+        public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
         public int Status { get; set; }
         public string Comment { get; set; }
         public DepartmentDto Department { get; set; }
@@ -24,7 +24,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Purchases.Dto
         public DateTime ReceivedDate { get; set; }
         public PurchaseDto()
         {
-            PurchaseProducts = new Collection<ProductResource>();
+            PurchaseProducts = new Collection<PurchaseProduct>();
         }
     }
 }

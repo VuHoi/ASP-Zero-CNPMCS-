@@ -16,4 +16,8 @@
     <ProjectReference Include="..\GWebsite.AbpZeroTemplate.EntityFrameworkCore\GWebsite.AbpZeroTemplate.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Budget\" />
+  </ItemGroup>
+
 </Project>

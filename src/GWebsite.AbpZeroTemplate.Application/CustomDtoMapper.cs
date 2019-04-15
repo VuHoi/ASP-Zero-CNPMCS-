@@ -4,6 +4,8 @@ using GWebsite.AbpZeroTemplate.Application.Share.MenuClients.Dto;
 using GWebsite.AbpZeroTemplate.Application.Share.Products.Dto;
 using GWebsite.AbpZeroTemplate.Application.Share.Purchases.Dto;
 using GWebsite.AbpZeroTemplate.Core.Models;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace GWebsite.AbpZeroTemplate.Applications
 {
@@ -13,13 +15,8 @@ namespace GWebsite.AbpZeroTemplate.Applications
         {
             configuration.CreateMap<MenuClient, MenuClientDto>();
             configuration.CreateMap<Product, ProductDto>();
-            configuration.CreateMap<Purchase, PurchaseDto>()
-           .AfterMap((pr, p) =>
-           {
-               var PurchaseProducts = pr.PurchaseProducts;
-               foreach (var pc in PurchaseProducts)
-                   p.PurchaseProducts.Add(new ProductResource() { Product = pc.Product});
-           });
+            configuration.CreateMap<Purchase, PurchaseDto>();
+            configuration.CreateMap<PurchaseDto, Purchase>();
             configuration.CreateMap<MenuClient, MenuClientListDto>();
             configuration.CreateMap<CreateMenuClientInput, MenuClient>();
             configuration.CreateMap<UpdateMenuClientInput, MenuClient>();
@@ -28,6 +25,36 @@ namespace GWebsite.AbpZeroTemplate.Applications
             configuration.CreateMap<DemoModel, DemoModelDto>();
             configuration.CreateMap<DemoModelInput, DemoModel>();
             configuration.CreateMap<DemoModel, DemoModelInput>();
+
+
+            // revert mapper 
+            configuration.CreateMap<PurchaseSave, Purchase>()
+                .ForMember(p => p.PurchaseProducts, opt => opt.Ignore())
+                .AfterMap((pr, p) =>
+                {
+                    p.PurchaseProducts= new Collection<PurchaseProduct>();
+                    var addedProduct = pr.PurchaseProducts.Where(id => p.PurchaseProducts.All(pc => pc.ProductId != id.ProductId && pc.Quantity != id.Quantity))
+                        .Select(id => new PurchaseProduct() { ProductId = id.ProductId, PurchaseId = pr.Id, Quantity = id.Quantity }).ToList();
+                    foreach (var pc in addedProduct)
+                    {
+                        p.PurchaseProducts.Add(pc);
+                    }
+
+                    var removedProduct =
+                        p.PurchaseProducts.Where(c => pr.PurchaseProducts.FirstOrDefault(x => x.ProductId == c.ProductId).Equals(null)).ToList();
+                    foreach (var pc in removedProduct)
+                    {
+                        p.PurchaseProducts.Remove(pc);
+                    }
+                });
         }
     }
 }
+
+//.ForMember(p => p.PurchaseProducts, opt => opt.Ignore())
+//            .AfterMap((pr, p) =>
+//            {
+//    foreach (var pc in pr.PurchaseProducts)
+//        p.PurchaseProducts.Add(new PurchaseProduct() { ProductId = 5, PurchaseId = 3, Quantity = 10 });
+
+//});

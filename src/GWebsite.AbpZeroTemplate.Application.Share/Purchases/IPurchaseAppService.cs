@@ -8,16 +8,14 @@ using System.Threading.Tasks;
 
 namespace GWebsite.AbpZeroTemplate.Application.Share.Purchases
 {
-  public interface IPurchaseAppService
+    public interface IPurchaseAppService
     {
-        Task<ListResultDto<PurchaseDto>> GetPurchasesAsync();
+        Task<PagedResultDto<PurchaseDto>> GetPurchasesAsync(Pagination pagination);
+        Task<PagedResultDto<PurchaseDto>> GetPurchasesAsync(GetPurchaseInput input);
+        Task<PurchaseDto> GetPurchaseForEditAsync(NullableIdDto input);
 
-
-        //Task<GetMenuClientOutput> GetMenuClientForEditAsync(NullableIdDto input);
-
-        //Task<MenuClientDto> CreateMenuClientAsync(CreateMenuClientInput input);
-
-        //Task<MenuClientDto> UpdateMenuClientAsync(UpdateMenuClientInput input);
+        Task<int> CreatePurchaseAsync(PurchaseSave input);
+        Task<PurchaseDto> UpdatePurchaseAsync(PurchaseSave input);
 
         //Task DeleteMenuClientAsync(EntityDto<int> input);
     }

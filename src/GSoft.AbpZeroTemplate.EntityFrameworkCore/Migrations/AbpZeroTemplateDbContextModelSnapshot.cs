@@ -1767,27 +1767,29 @@ namespace GSoft.AbpZeroTemplate.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("AuthorizedDate");
+                    b.Property<DateTime?>("AuthorizedDate");
 
                     b.Property<string>("Comment");
 
-                    b.Property<int>("DepartmentId");
+                    b.Property<int?>("DepartmentId");
 
-                    b.Property<DateTime>("RaisedDate");
+                    b.Property<DateTime?>("RaisedDate");
 
-                    b.Property<DateTime>("ReceivedDate");
+                    b.Property<DateTime?>("ReceivedDate");
 
-                    b.Property<DateTime>("RequiredDate");
+                    b.Property<DateTime?>("RequiredDate");
 
                     b.Property<int>("Status");
 
-                    b.Property<long?>("UserId");
+                    b.Property<int?>("UserId");
+
+                    b.Property<long?>("UserId1");
 
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Purchases");
                 });
@@ -2125,7 +2127,7 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
                     b.HasOne("GSoft.AbpZeroTemplate.Authorization.Users.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId1");
                 });
 
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.PurchaseProduct", b =>

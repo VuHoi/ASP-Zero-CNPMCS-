@@ -11,19 +11,19 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
     public partial class Purchase : Entity<int>
     {
         public User User { get; set; }
+        public int? UserId { get; set; }
         public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
         public int Status { get; set; }
         public string Comment { get; set; }
         public Department Department { get; set; }
-        public int DepartmentId { get; set; }
-        public DateTime RaisedDate { get; set; }
-        public DateTime AuthorizedDate { get; set; }
-        public DateTime RequiredDate { get; set; }
-        public DateTime ReceivedDate { get; set; }
+        public int? DepartmentId { get; set; }
+        public DateTime? RaisedDate { get; set; }
+        public DateTime? AuthorizedDate { get; set; }
+        public DateTime? RequiredDate { get; set; }
+        public DateTime? ReceivedDate { get; set; }
 
         public Purchase()
         {
-            Status = 0;
             RaisedDate = DateTime.Now;
             PurchaseProducts = new Collection<PurchaseProduct>();
         }
