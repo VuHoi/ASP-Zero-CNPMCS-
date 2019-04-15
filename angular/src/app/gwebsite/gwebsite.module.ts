@@ -20,6 +20,11 @@ import { ViewCustomerModalComponent } from './customer/view-customer-modal.compo
 import { CreateOrEditCustomerModalComponent } from './customer/create-or-edit-customer-modal.component';
 import { ProductComponent } from './product/product.component';
 import { CreateOrEditProductModalComponent } from './product/create-or-edit-product-modal/create-or-edit-product-modal.component';
+import { PlanComponent } from './plan/plan.component';
+import { CreateOrEditPlanModalComponent } from './plan/create-or-edit-plan-modal/create-or-edit-plan-modal.component';
+import { PurchaseComponent } from './purchase/purchase.component';
+import { CreateOrEditPurchaseModalComponent } from './purchase/create-or-edit-purchase-modal/create-or-edit-purchase-modal.component';
+
 
 @NgModule({
     imports: [
@@ -43,7 +48,8 @@ import { CreateOrEditProductModalComponent } from './product/create-or-edit-prod
     declarations: [
         MenuClientComponent, CreateOrEditMenuClientModalComponent,
         DemoModelComponent, CreateOrEditDemoModelModalComponent, ViewDemoModelModalComponent,
-        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent, CreateOrEditProductModalComponent
+        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent, CreateOrEditProductModalComponent,
+        PlanComponent, CreateOrEditPlanModalComponent, PurchaseComponent, CreateOrEditPurchaseModalComponent
     ],
     providers: [
         DemoModelServiceProxy,

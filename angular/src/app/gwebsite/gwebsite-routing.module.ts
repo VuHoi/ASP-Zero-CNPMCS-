@@ -4,6 +4,8 @@ import { MenuClientComponent } from '@app/gwebsite/menu-client/menu-client.compo
 import { DemoModelComponent } from './demo-model/demo-model.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ProductComponent } from './product/product.component';
+import { PlanComponent } from './plan/plan.component';
+import { PurchaseComponent } from './purchase/purchase.component';
 
 @NgModule({
     imports: [
@@ -40,6 +42,26 @@ import { ProductComponent } from './product/product.component';
                 children: [
                     {
                         path: 'product', component: ProductComponent,
+                        //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                        data: { permission: 'Pages.Administration.MenuClient' }
+                    },
+                ]
+            },
+            {
+                path: '',
+                children: [
+                    {
+                        path: 'plan', component: PlanComponent,
+                        //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                        data: { permission: 'Pages.Administration.MenuClient' }
+                    },
+                ]
+            },
+            {
+                path: '',
+                children: [
+                    {
+                        path: 'purchase', component: PurchaseComponent,
                         //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
                         data: { permission: 'Pages.Administration.MenuClient' }
                     },
