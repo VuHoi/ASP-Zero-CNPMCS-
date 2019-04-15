@@ -40,7 +40,8 @@ import { ProductComponent } from './product/product.component';
                 children: [
                     {
                         path: 'product', component: ProductComponent,
-                        data: { permission: 'Pages.Administration.Product' }
+                        //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                        data: { permission: 'Pages.Administration.MenuClient' }
                     },
                 ]
             }
