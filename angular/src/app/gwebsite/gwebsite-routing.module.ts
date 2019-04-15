@@ -6,6 +6,7 @@ import { CustomerComponent } from './customer/customer.component';
 import { ProductComponent } from './product/product.component';
 import { PlanComponent } from './plan/plan.component';
 import { PurchaseComponent } from './purchase/purchase.component';
+import { PurchaseHistoryComponent } from './purchaseHistory/purchaseHistory.component';
 
 @NgModule({
     imports: [
@@ -62,6 +63,16 @@ import { PurchaseComponent } from './purchase/purchase.component';
                 children: [
                     {
                         path: 'purchase', component: PurchaseComponent,
+                        //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                        data: { permission: 'Pages.Administration.MenuClient' }
+                    },
+                ]
+            },
+            {
+                path: '',
+                children: [
+                    {
+                        path: 'purchasehistory', component: PurchaseHistoryComponent,
                         //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
                         data: { permission: 'Pages.Administration.MenuClient' }
                     },
