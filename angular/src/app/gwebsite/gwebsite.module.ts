@@ -19,6 +19,7 @@ import { CustomerComponent } from './customer/customer.component';
 import { ViewCustomerModalComponent } from './customer/view-customer-modal.component';
 import { CreateOrEditCustomerModalComponent } from './customer/create-or-edit-customer-modal.component';
 import { ProductComponent } from './product/product.component';
+import { CreateOrEditProductModalComponent } from './product/create-or-edit-product-modal/create-or-edit-product-modal.component';
 
 @NgModule({
     imports: [
@@ -42,7 +43,7 @@ import { ProductComponent } from './product/product.component';
     declarations: [
         MenuClientComponent, CreateOrEditMenuClientModalComponent,
         DemoModelComponent, CreateOrEditDemoModelModalComponent, ViewDemoModelModalComponent,
-        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent,
+        CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent, CreateOrEditProductModalComponent
     ],
     providers: [
         DemoModelServiceProxy,
