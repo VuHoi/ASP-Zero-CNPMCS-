@@ -989,6 +989,8 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
                     b.Property<long?>("LastModifierUserId");
 
+                    b.Property<int>("Level");
+
                     b.Property<DateTime?>("LockoutEndDateUtc");
 
                     b.Property<string>("Name")
@@ -1772,6 +1774,8 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.Property<string>("Comment");
 
                     b.Property<int?>("DepartmentId");
+
+                    b.Property<int>("Level");
 
                     b.Property<DateTime?>("RaisedDate");
 

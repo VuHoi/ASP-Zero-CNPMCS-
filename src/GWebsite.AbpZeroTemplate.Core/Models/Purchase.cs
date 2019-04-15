@@ -12,6 +12,7 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
     {
         public User User { get; set; }
         public int? UserId { get; set; }
+        public int Level { get; set; }
         public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
         public int Status { get; set; }
         public string Comment { get; set; }

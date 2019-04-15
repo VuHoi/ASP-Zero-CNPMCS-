@@ -37,9 +37,9 @@ namespace GWebsite.AbpZeroTemplate.Core.Authorization
             menuClients.CreateChildPermission(GWebsitePermissions.Pages_Administration_OrderPackage_Delete, L("DeletingMenuClient"));
 
             var purchase = gwebsite.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase, L("Purchase"));
-            menuClients.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Create, L("CreatingNewPurchase"));
-            menuClients.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Edit, L("EditingPurchase"));
-            menuClients.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Delete, L("DeletingPurchase"));
+            purchase.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Create, L("CreatingNewPurchase"));
+            purchase.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Edit, L("EditingPurchase"));
+            purchase.CreateChildPermission(GWebsitePermissions.Pages_Administration_Purchase_Delete, L("DeletingPurchase"));
 
             var orderPackages = gwebsite.CreateChildPermission(GWebsitePermissions.Pages_Administration_MenuClient, L("OrderPackage"));
             orderPackages.CreateChildPermission(GWebsitePermissions.Pages_Administration_MenuClient_Create, L("CreatingNewOrderPackage"));

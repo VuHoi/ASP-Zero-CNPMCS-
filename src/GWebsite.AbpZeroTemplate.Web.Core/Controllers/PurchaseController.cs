@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using GSoft.AbpZeroTemplate.Authorization.Users;
 using GWebsite.AbpZeroTemplate.Application.Share;
 using GWebsite.AbpZeroTemplate.Application.Share.Purchases;
 using GWebsite.AbpZeroTemplate.Application.Share.Purchases.Dto;
@@ -46,9 +47,21 @@ namespace GWebsite.AbpZeroTemplate.Application.Controllers
         }
 
         [HttpPut]
-        public async Task<PurchaseDto> UpdateMenuClient([FromBody] PurchaseSave input)
+        public async Task<PurchaseDto> UpdatePurchase([FromBody] PurchaseSave input)
         {
             return await _PurchaseAppService.UpdatePurchaseAsync(input);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task DeletePurchase(int id)
+        {
+            await _PurchaseAppService.DeletePurchaseAsync(new EntityDto<int>() { Id = id });
+        }
+
+        [HttpGet]
+        public async Task<string> ApprovePurchase(EntityDto<int> input)
+        {
+            return await _PurchaseAppService.ApprovePurchaseAsync(input);
         }
     }
 }
