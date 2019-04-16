@@ -96,7 +96,7 @@ export class PurchaseHistoryComponent extends AppComponentBase implements AfterV
 
     applyFilters(): void {
         //truyền params lên url thông qua router
-        this._router.navigate(['app/gwebsite/purchaseHistory', {
+        this._router.navigate(['app/gwebsite/purchase-history', {
             filterText: this.filterText
         }]);
 

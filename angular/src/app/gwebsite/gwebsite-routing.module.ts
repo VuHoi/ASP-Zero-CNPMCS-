@@ -72,7 +72,7 @@ import { PurchaseHistoryComponent } from './purchaseHistory/purchaseHistory.comp
                 path: '',
                 children: [
                     {
-                        path: 'purchasehistory', component: PurchaseHistoryComponent,
+                        path: 'purchase-history', component: PurchaseHistoryComponent,
                         //tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
                         data: { permission: 'Pages.Administration.MenuClient' }
                     },
