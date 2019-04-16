@@ -25,6 +25,7 @@ import { CreateOrEditPlanModalComponent } from './plan/create-or-edit-plan-modal
 import { PurchaseComponent } from './purchase/purchase.component';
 import { CreateOrEditPurchaseModalComponent } from './purchase/create-or-edit-purchase-modal/create-or-edit-purchase-modal.component';
 import { PurchaseHistoryComponent } from './purchaseHistory/purchaseHistory.component';
+import { BudgetComponent } from './budget/budget.component';
 
 @NgModule({
     imports: [
@@ -49,7 +50,7 @@ import { PurchaseHistoryComponent } from './purchaseHistory/purchaseHistory.comp
         MenuClientComponent, CreateOrEditMenuClientModalComponent,
         DemoModelComponent, CreateOrEditDemoModelModalComponent, ViewDemoModelModalComponent,
         CustomerComponent, CreateOrEditCustomerModalComponent, ViewCustomerModalComponent, ProductComponent, CreateOrEditProductModalComponent,
-        PlanComponent, CreateOrEditPlanModalComponent, PurchaseComponent, CreateOrEditPurchaseModalComponent,  PurchaseHistoryComponent
+        PlanComponent, CreateOrEditPlanModalComponent, PurchaseComponent, CreateOrEditPurchaseModalComponent,  PurchaseHistoryComponent, BudgetComponent
     ],
     providers: [
         DemoModelServiceProxy,
