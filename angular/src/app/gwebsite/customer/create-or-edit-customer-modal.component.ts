@@ -41,7 +41,7 @@ export class CreateOrEditCustomerModalComponent extends AppComponentBase {
             this.customer = result;
             this.modal.show();
 
-        })
+        });
     }
 
     save(): void {
@@ -50,8 +50,7 @@ export class CreateOrEditCustomerModalComponent extends AppComponentBase {
         this._customerService.createOrEditCustomer(input).subscribe(result => {
             this.notify.info(this.l('SavedSuccessfully'));
             this.close();
-        })
-
+        });
     }
 
     close(): void {
