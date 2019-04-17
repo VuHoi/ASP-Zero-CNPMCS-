@@ -49,17 +49,29 @@
                                       {{l('Name')}}
                                       <p-sortIcon field="name"></p-sortIcon>
                                   </th>
-                                  <th pSortableColumn="alias">
-                                      {{l('Alias')}}
-                                      <p-sortIcon field="alias"></p-sortIcon>
+                                  <th pSortableColumn="supplier">
+                                      {{l('Supplier')}}
+                                      <p-sortIcon field="supplier"></p-sortIcon>
                                   </th>
-                                  <th pSortableColumn="displayOrder">
-                                      {{l('DisplayOrder')}}
-                                      <p-sortIcon field="displayOrder"></p-sortIcon>
+                                  <th pSortableColumn="contact">
+                                    {{l('Contact')}}
+                                    <p-sortIcon field="contact"></p-sortIcon>
                                   </th>
-                                  <th pSortableColumn="description">
-                                      {{l('Description')}}
-                                      <p-sortIcon field="description"></p-sortIcon>
+                                  <th pSortableColumn="price">
+                                    {{l('Price')}}
+                                    <p-sortIcon field="price"></p-sortIcon>
+                                  </th>
+                                 <th pSortableColumn="description">
+                                    {{l('Description')}}
+                                    <p-sortIcon field="description"></p-sortIcon>
+                                 </th>
+                                  <th pSortableColumn="addedDate">
+                                      {{l('AddedDate')}}
+                                      <p-sortIcon field="addedDate"></p-sortIcon>
+                                  </th>
+                                  <th pSortableColumn="image">
+                                    {{l('Image')}}
+                                    <p-sortIcon field="image"></p-sortIcon>
                                   </th>
                                   <th>{{l('Edit')}}</th>
                               </tr>
@@ -71,16 +83,28 @@
                                       <span title="{{record.name}}">{{truncateString(record.name)}}</span>
                                   </td>
                                   <td>
-                                      <span class="ui-column-title">{{l('Alias')}}</span>
-                                      <span title="{{record.alias}}">{{truncateString(record.alias)}}</span>
+                                      <span class="ui-column-title">{{l('Supplier')}}</span>
+                                      <span title="{{record.supplier}}">{{truncateString(record.supplierDto.name)}}</span>
                                   </td>
                                   <td>
-                                      <span class="ui-column-title">{{l('DisplayOrder')}}</span>
-                                      <span title="{{record.displayOrder}}">{{ record.displayOrder }}</span>
+                                    <span class="ui-column-title">{{l('Contact')}}</span>
+                                    <span title="{{record.contact}}">{{truncateString(record.supplierDto.contact)}}</span>
+                                 </td>
+                                  <td>
+                                    <span class="ui-column-title">{{l('Price')}}</span>
+                                    <span title="{{record.price}}">{{truncateString(record.price)}}</span>
                                   </td>
                                   <td>
-                                      <span class="ui-column-title">{{l('Description')}}</span>
-                                      <span title="{{record.description}}">{{truncateString(record.description)}}</span>
+                                    <span class="ui-column-title">{{l('Description')}}</span>
+                                    <span title="{{record.description}}">{{truncateString(record.description)}}</span>
+                                  </td>
+                                  <td>
+                                      <span class="ui-column-title">{{l('AddedDate')}}</span>
+                                      <span title="{{record.addedDate}}">{{ record.addedDate }}</span>
+                                  </td>
+                                  <td>
+                                    <span class="ui-column-title">{{l('Image')}}</span>
+                                    <span title="{{record.image}}">{{ record.imageDto.url }}</span>
                                   </td>
                                   <td>
                                       <button class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill"
