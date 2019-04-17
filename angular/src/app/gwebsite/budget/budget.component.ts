@@ -6,7 +6,6 @@ import * as _ from 'lodash';
 import { LazyLoadEvent } from 'primeng/components/common/lazyloadevent';
 import { Paginator } from 'primeng/components/paginator/paginator';
 import { Table } from 'primeng/components/table/table';
-import { CreateOrEditBudgetModalComponent } from './create-or-edit-budget-modal/create-or-edit-budget-modal.component';
 import { WebApiServiceProxy, IFilter } from '@shared/service-proxies/webapi.service';
 
 @Component({
@@ -21,7 +20,6 @@ export class BudgetComponent extends AppComponentBase implements AfterViewInit, 
      * @ViewChild là dùng get control và call thuộc tính, functions của control đó
      */
     @ViewChild('textsTable') textsTable: ElementRef;
-    @ViewChild('createOrEditModal') createOrEditModal: CreateOrEditBudgetModalComponent;
     @ViewChild('dataTable') dataTable: Table;
     @ViewChild('paginator') paginator: Paginator;
 
@@ -114,22 +112,5 @@ export class BudgetComponent extends AppComponentBase implements AfterViewInit, 
      */
     truncateString(text): string {
         return abp.utils.truncateStringWithPostfix(text, 32, '...');
-    }
-
-    //Refresh grid khi thực hiện create or edit thành công
-    refreshValueFromModal(): void {
-        if (this.createOrEditModal.budget.id) {
-            for (let i = 0; i < this.primengTableHelper.records.length; i++) {
-                if (this.primengTableHelper.records[i].id === this.createOrEditModal.budget.id) {
-                    this.primengTableHelper.records[i] = this.createOrEditModal.budget;
-                    return;
-                }
-            }
-        } else { this.reloadPage(); }
-    }
-
-    //hàm show view create Budget
-    createBudget() {
-        this.createOrEditModal.show();
     }
 }

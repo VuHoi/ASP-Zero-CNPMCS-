@@ -10,11 +10,11 @@
                     {{l("BudgetInfo")}}
                 </span>
             </div>
-            <div class="col-xs-6 text-right">
-                <!-- Tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
+            <!-- Tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
+            <!-- <div class="col-xs-6 text-right">
                 <button (click)="createBudget()" *ngIf="isGranted('Pages.Administration.MenuClient.Create')" class="btn btn-primary"><i
                         class="fa fa-plus"></i> {{l("CreateNewBudget")}}</button>
-            </div>
+            </div> -->
         </div>
     </div>
   
@@ -109,6 +109,5 @@
             </div>
         </div>
     </div>
-    <createOrEditBudgetModal #createOrEditModal (modalSave)="refreshValueFromModal()"></createOrEditBudgetModal>
   </div>
   
