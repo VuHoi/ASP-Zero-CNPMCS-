@@ -28,6 +28,21 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
     plan: PlanDto = new PlanDto();
     plans: ComboboxItemDto[] = [];
 
+    public productsData = [
+        {
+          id: 1,
+          name: 'Domestic'
+        },
+        {
+          id: 2,
+          name: 'Outsource'
+        },
+        {
+          id: 3,
+          name: 'Imports'
+        }
+      ];
+
     constructor(
         injector: Injector,
         private _apiService: WebApiServiceProxy
@@ -61,7 +76,7 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
 
     insertPlan() {
         // tiennnnnnnnnnnnnnnnnnnnnnnnnnnnn
-        this._apiService.post('api/MenuClient/CreateMenuClient', this.plan)
+        this._apiService.post('api/Purchase/CreatePurchase', this.plan)
             .pipe(finalize(() => this.saving = false))
             .subscribe(() => {
                 this.notify.info(this.l('SavedSuccessfully'));

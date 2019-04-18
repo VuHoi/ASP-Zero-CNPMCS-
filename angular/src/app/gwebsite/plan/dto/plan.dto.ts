@@ -2,16 +2,17 @@ import { ComboboxItemDto } from '@shared/service-proxies/service-proxies';
 
 export class PlanDto {
     id: number;
-    name: string;
-    alias: string;
-    description: string;
-    parentId: number | null;
-    displayOrder: number | null;
-    homeOrder: number | null;
-    image: string;
-    homeFlag: boolean | null;
-    metaKeyword: string;
-    metaDescription: string;
+    purchaseProducts: PurchaseProducts;
+    userId: number;
+    status: number;
+    comment: string;
+    departmentId: number;
+    raisedDate: string;
+}
+
+export interface PurchaseProducts {
+    quantity: number;
+    productId: number;
 }
 
 export class GetPlanOutput {

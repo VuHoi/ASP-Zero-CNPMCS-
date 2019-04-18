@@ -2,6 +2,7 @@ import { CustomerServiceProxy } from './../../shared/service-proxies/service-pro
 import { ViewDemoModelModalComponent } from './demo-model/view-demo-model-modal.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 import { AppCommonModule } from '@app/shared/common/app-common.module';
 import { UtilsModule } from '@shared/utils/utils.module';
@@ -30,6 +31,7 @@ import { BudgetComponent } from './budget/budget.component';
 @NgModule({
     imports: [
         FormsModule,
+        NgSelectModule,
         CommonModule,
         FileUploadModule,
         ModalModule.forRoot(),
