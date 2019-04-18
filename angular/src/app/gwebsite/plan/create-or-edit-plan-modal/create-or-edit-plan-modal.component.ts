@@ -53,15 +53,18 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
     show(planId?: number | null | undefined): void {
         this.active = true;
 
-        this._apiService.getForEdit('api/MenuClient/GetMenuClientForEdit', planId).subscribe(result => {
-            // tiennnnnnnnnnnnnnnnnnnnnnnnnnnnn
-            this.plan = result.menuClient;
-            this.plans = result.menuClients;
-            this.modal.show();
-            setTimeout(() => {
-                    $(this.planCombobox.nativeElement).selectpicker('refresh');
-            }, 0);
-        });
+        if (planId) {
+            this._apiService.getForEdit('api/MenuClient/GetMenuClientForEdit', planId).subscribe(result => {
+                // tiennnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                this.plan = result.menuClient;
+                this.plans = result.menuClients;
+                this.modal.show();
+                setTimeout(() => {
+                        $(this.planCombobox.nativeElement).selectpicker('refresh');
+                }, 0);
+            });
+        }
+
     }
 
     save(): void {
