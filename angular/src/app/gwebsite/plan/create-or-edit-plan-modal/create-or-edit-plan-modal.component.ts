@@ -25,6 +25,8 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
     active = false;
     saving = false;
 
+    isEdit = false;
+
     plan: PlanDto = new PlanDto();
     plans: ComboboxItemDto[] = [];
 
@@ -63,8 +65,12 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
                         $(this.planCombobox.nativeElement).selectpicker('refresh');
                 }, 0);
             });
-        }
 
+            this.isEdit = true;
+        } else {
+            this.plan = null;
+            this.plans = [];
+        }
     }
 
     save(): void {

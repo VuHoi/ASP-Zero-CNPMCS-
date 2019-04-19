@@ -5,8 +5,8 @@
             <form *ngIf="active" #editForm="ngForm" novalidate (ngSubmit)="save()">
                 <div class="modal-header">
                     <h4 class="modal-title">
-                        <span *ngIf="plan.id">{{l("EditPlan")}}: {{plan.name}}</span>
-                        <span *ngIf="!plan.id">{{l("Create New Plan")}}</span>
+                        <span *ngIf="isEdit">{{l("EditPlan")}}: {{plan.name}}</span>
+                        <span *ngIf="!isEdit">{{l("Create New Plan")}}</span>
                     </h4>
                     <button type="button" class="close" (click)="close()" [attr.aria-label]="l('Close')">
                         <span aria-hidden="true">&times;</span>
