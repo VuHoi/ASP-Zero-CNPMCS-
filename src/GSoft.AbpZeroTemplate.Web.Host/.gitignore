@@ -34,7 +34,7 @@ Obj/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
-
+App_Data/Logs/
 # NUNIT
 *.VisualState.xml
 TestResult.xml
