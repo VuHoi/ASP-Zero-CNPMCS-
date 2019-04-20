@@ -10,7 +10,7 @@ export class PlanDto {
     raisedDate: string;
 }
 
-export interface PurchaseProducts {
+export class PurchaseProducts {
     quantity: number;
     productId: number;
 }

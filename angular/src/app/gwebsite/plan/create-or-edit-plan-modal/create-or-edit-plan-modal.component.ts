@@ -4,7 +4,7 @@ import { ModalDirective } from 'ngx-bootstrap';
 import { finalize } from 'rxjs/operators';
 import { WebApiServiceProxy } from '@shared/service-proxies/webapi.service';
 import { ComboboxItemDto } from '@shared/service-proxies/service-proxies';
-import { PlanDto } from '../dto/plan.dto';
+import { PlanDto, PurchaseProducts } from '../dto/plan.dto';
 
 @Component({
     selector: 'createOrEditPlanModal',
@@ -28,7 +28,8 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
     isEdit = false;
 
     plan: PlanDto = new PlanDto();
-    plans: ComboboxItemDto[] = [];
+    purchaseProducts: PurchaseProducts = new PurchaseProducts();
+    products: ComboboxItemDto[] = [];
 
     public productsData = [
         {
@@ -53,13 +54,18 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
     }
 
     show(planId?: number | null | undefined): void {
-        this.active = true;
+        this._apiService.get('api/Products/GetProducts').subscribe(result => {
+            this.products = result.items;
+            this.modal.show();
+            setTimeout(() => {
+                    $(this.planCombobox.nativeElement).selectpicker('refresh');
+            }, 0);
+        });
 
         if (planId) {
             this._apiService.getForEdit('api/MenuClient/GetMenuClientForEdit', planId).subscribe(result => {
                 // tiennnnnnnnnnnnnnnnnnnnnnnnnnnnn
                 this.plan = result.menuClient;
-                this.plans = result.menuClients;
                 this.modal.show();
                 setTimeout(() => {
                         $(this.planCombobox.nativeElement).selectpicker('refresh');
@@ -68,9 +74,15 @@ export class CreateOrEditPlanModalComponent extends AppComponentBase {
 
             this.isEdit = true;
         } else {
-            this.plan = null;
-            this.plans = [];
+            this.plan.id = 0;
+            this.plan.comment = '';
+            this.plan.departmentId = 0;
+            this.purchaseProducts.quantity = 0;
+            this.purchaseProducts.productId = 0;
+            this.plan.purchaseProducts = this.purchaseProducts;
         }
+
+        this.active = true;
     }
 
     save(): void {

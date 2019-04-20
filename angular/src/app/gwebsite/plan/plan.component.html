@@ -12,7 +12,7 @@
             </div>
             <div class="col-xs-6 text-right">
                 <!-- Tiennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
-                <button (click)="createPlan()" *ngIf="isGranted('Pages.Administration.MenuClient.Create')" class="btn btn-primary"><i
+                <button (click)="createPlan()" *ngIf="isGranted('Pages.Administration.Purchase.Create')" class="btn btn-primary"><i
                         class="fa fa-plus"></i> {{l("CreateNewPlan")}}</button>
             </div>
         </div>
@@ -45,42 +45,58 @@
                             [responsive]="primengTableHelper.isResponsive">
                             <ng-template pTemplate="header">
                                 <tr>
-                                    <th pSortableColumn="name">
-                                        {{l('Name')}}
-                                        <p-sortIcon field="name"></p-sortIcon>
+                                    <th pSortableColumn="department">
+                                        {{l('Department')}}
+                                        <p-sortIcon field="department"></p-sortIcon>
                                     </th>
-                                    <th pSortableColumn="alias">
-                                        {{l('Alias')}}
-                                        <p-sortIcon field="alias"></p-sortIcon>
+                                    <th pSortableColumn="product">
+                                        {{l('Product')}}
+                                        <p-sortIcon field="product"></p-sortIcon>
                                     </th>
-                                    <th pSortableColumn="displayOrder">
-                                        {{l('DisplayOrder')}}
-                                        <p-sortIcon field="displayOrder"></p-sortIcon>
+                                    <th pSortableColumn="quantity">
+                                        {{l('Quantity')}}
+                                        <p-sortIcon field="quantity"></p-sortIcon>
                                     </th>
-                                    <th pSortableColumn="description">
-                                        {{l('Description')}}
-                                        <p-sortIcon field="description"></p-sortIcon>
+                                    <th pSortableColumn="updateDate">
+                                        {{l('Update Date')}}
+                                        <p-sortIcon field="updateDate"></p-sortIcon>
                                     </th>
-                                    <th>{{l('Edit')}}</th>
+                                    <th pSortableColumn="status">
+                                        {{l('Status')}}
+                                        <p-sortIcon field="status"></p-sortIcon>
+                                    </th>
+                                    <th pSortableColumn="comment">
+                                        {{l('Comment')}}
+                                        <p-sortIcon field="comment"></p-sortIcon>
+                                    </th>
+                                    <th>{{l('Action')}}</th>
                                 </tr>
                             </ng-template>
                             <ng-template pTemplate="body" let-record="$implicit">
                                 <tr>
                                     <td>
-                                        <span class="ui-column-title">{{l('Name')}}</span>
-                                        <span title="{{record.name}}">{{truncateString(record.name)}}</span>
+                                        <span class="ui-column-title">{{l('Department')}}</span>
+                                        <span title="{{record.department}}">{{truncateString(record.department)}}</span>
                                     </td>
                                     <td>
-                                        <span class="ui-column-title">{{l('Alias')}}</span>
-                                        <span title="{{record.alias}}">{{truncateString(record.alias)}}</span>
+                                        <span class="ui-column-title">{{l('Product')}}</span>
+                                        <span title="{{record.alias}}">{{truncateString(record.product)}}</span>
                                     </td>
                                     <td>
-                                        <span class="ui-column-title">{{l('DisplayOrder')}}</span>
-                                        <span title="{{record.displayOrder}}">{{ record.displayOrder }}</span>
+                                        <span class="ui-column-title">{{l('Quantity')}}</span>
+                                        <span title="{{record.quantity}}">{{ record.quantity }}</span>
                                     </td>
                                     <td>
-                                        <span class="ui-column-title">{{l('Description')}}</span>
-                                        <span title="{{record.description}}">{{truncateString(record.description)}}</span>
+                                        <span class="ui-column-title">{{l('Update Date')}}</span>
+                                        <span title="{{record.updateDate}}">{{ record.updateDate }}</span>
+                                    </td>
+                                    <td>
+                                        <span class="ui-column-title">{{l('Status')}}</span>
+                                        <span title="{{record.updateDate}}">{{ record.status }}</span>
+                                    </td>
+                                    <td>
+                                        <span class="ui-column-title">{{l('Comment')}}</span>
+                                        <span title="{{record.updateDate}}">{{ record.comment }}</span>
                                     </td>
                                     <td>
                                         <button class="btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill"
