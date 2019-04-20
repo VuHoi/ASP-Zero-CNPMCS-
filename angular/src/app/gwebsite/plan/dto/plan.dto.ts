@@ -19,3 +19,8 @@ export class GetPlanOutput {
     plan: PlanDto;
     plans: ComboboxItemDto[];
 }
+
+export enum StatusEnum {
+    Draft = 1,
+    Official = 2
+}
