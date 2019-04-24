@@ -20,10 +20,12 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
         public Supplier Supplier { get; set; }
         public int SupplierId { get; set; }
         public ICollection<PurchaseProduct> PurchaseProducts { get; set; }
+        public ICollection<Bidding> Biddings { get; set; }
         public Product()
         {
             AddedDate = DateTime.Now;
             PurchaseProducts = new Collection<PurchaseProduct>();
+            Biddings = new Collection<Bidding>();
         }
     }
 }

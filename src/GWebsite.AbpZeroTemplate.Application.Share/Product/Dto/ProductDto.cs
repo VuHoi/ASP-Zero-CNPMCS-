@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GWebsite.AbpZeroTemplate.Application.Share.Bidding.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Products.Dto
         public string Summary { get; set; }
         public string AvailableAddress { get; set; }
         public DateTime AddedDate { get; set; }
-        public ImageDto ImageDto { get; set; }
-        public SupplierDto SupplierDto { get; set; }
+        public ImageDto Image { get; set; }
+        public SupplierDto Supplier { get; set; }
     }
 }

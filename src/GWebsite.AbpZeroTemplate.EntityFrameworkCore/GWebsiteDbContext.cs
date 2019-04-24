@@ -33,6 +33,7 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
         /// GPermissions dùng cho bên Gwebsite
         /// </summary>
         public virtual DbSet<Permission> GPermissions { get; set; }
+        public virtual DbSet<Bidding> Biddings { get; set; }
 
         /// <summary>
         /// 
@@ -314,13 +315,20 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
                 .OnDelete(DeleteBehavior.Cascade);
 
             });
-            modelBuilder.Entity<Supplier>(entity =>
+            modelBuilder.Entity<Bidding>(entity =>
             {
                 entity
-               .HasMany(p => p.Products)
-                .WithOne(i => i.Supplier)
-                .HasForeignKey(i => i.SupplierId)
-                .OnDelete(DeleteBehavior.Cascade);
+                      .HasKey(oi => new { oi.ProductId, oi.SupplierId });
+                entity
+                       .HasOne(p => p.Product)
+                        .WithMany(i => i.Biddings)
+                        .HasForeignKey(i => i.ProductId)
+                        .OnDelete(DeleteBehavior.Restrict);
+                entity
+                     .HasOne(p => p.Supplier)
+                      .WithMany(i => i.Biddings)
+                      .HasForeignKey(i => i.SupplierId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
             });
             modelBuilder.Entity<Department>(entity =>

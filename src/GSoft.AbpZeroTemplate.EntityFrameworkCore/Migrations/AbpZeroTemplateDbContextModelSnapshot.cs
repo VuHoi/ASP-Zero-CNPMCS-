@@ -1553,6 +1553,25 @@ namespace GSoft.AbpZeroTemplate.Migrations
                     b.ToTable("AppUserRoles");
                 });
 
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Bidding", b =>
+                {
+                    b.Property<int>("ProductId");
+
+                    b.Property<int>("SupplierId");
+
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.Property<int>("Status");
+
+                    b.HasKey("ProductId", "SupplierId");
+
+                    b.HasIndex("SupplierId");
+
+                    b.ToTable("Biddings");
+                });
+
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.DemoModel", b =>
                 {
                     b.Property<int>("Id")
@@ -2085,6 +2104,19 @@ namespace GSoft.AbpZeroTemplate.Migrations
                         .HasConstraintName("FK_dbo.AppUserRoles_dbo.AppRoles_IdentityRole_Id");
                 });
 
+            modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Bidding", b =>
+                {
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Product", "Product")
+                        .WithMany("Biddings")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Supplier", "Supplier")
+                        .WithMany("Biddings")
+                        .HasForeignKey("SupplierId")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Function", b =>
                 {
                     b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Function", "Parent")
@@ -2117,7 +2149,7 @@ namespace GSoft.AbpZeroTemplate.Migrations
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Product", b =>
                 {
                     b.HasOne("GWebsite.AbpZeroTemplate.Core.Models.Supplier", "Supplier")
-                        .WithMany("Products")
+                        .WithMany()
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

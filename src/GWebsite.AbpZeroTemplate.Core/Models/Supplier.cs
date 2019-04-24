@@ -15,10 +15,10 @@ namespace GWebsite.AbpZeroTemplate.Core.Models
         public string Fax { get; set; }
         public string Phone { get; set; }
         public string Contact { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public ICollection<Bidding> Biddings { get; set; }
         public Supplier()
         {
-            Products = new Collection<Product>();
+            Biddings = new Collection<Bidding>();
         }
     }
 }

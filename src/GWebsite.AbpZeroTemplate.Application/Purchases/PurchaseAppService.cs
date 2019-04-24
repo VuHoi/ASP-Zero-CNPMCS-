@@ -40,6 +40,7 @@ namespace GWebsite.AbpZeroTemplate.Web.Core.Purchases
             return new PagedResultDto<PurchaseDto>(
              totalCount,
              items.Select(item => ObjectMapper.Map<PurchaseDto>(item)).ToList());
+
         }
 
         public async Task<PagedResultDto<PurchaseDto>> GetPurchasesAsync(GetPurchaseInput input)
