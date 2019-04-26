@@ -16,7 +16,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Bidding
 
         Task<PagedResultDto<SupplierDto>> GetAllBiddingPassAsync(Pagination pagination);
         Task<BiddingProduct> BiddingProductAsync(BiddingSaved biddingSaved);
-        //Task<SupplierDto> ChangeOwnerBiddingProductAsync();
+        Task<BiddingProduct> ChangeOwnerBiddingProductAsync(BiddingSaved biddingSaved);
 
         //Task<string> ApprovePurchaseAsync(EntityDto<int> input);
         //Task DeletePurchaseAsync(EntityDto<int> input);

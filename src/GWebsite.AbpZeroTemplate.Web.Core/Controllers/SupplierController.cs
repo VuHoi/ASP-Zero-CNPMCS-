@@ -41,5 +41,11 @@ namespace GWebsite.AbpZeroTemplate.Application.Controllers
         {
             return await _SupplierAppService.BiddingProductAsync(BiddingSaved);
         }
+
+        [HttpPut]
+        public async Task<BiddingProduct> ChangeOwnerBiddingProduct([FromBody]  BiddingSaved BiddingSaved)
+        {
+            return await _SupplierAppService.ChangeOwnerBiddingProductAsync(BiddingSaved);
+        }
     }
 }

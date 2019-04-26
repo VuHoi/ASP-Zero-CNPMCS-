@@ -1555,17 +1555,23 @@ namespace GSoft.AbpZeroTemplate.Migrations
 
             modelBuilder.Entity("GWebsite.AbpZeroTemplate.Core.Models.Bidding", b =>
                 {
-                    b.Property<int>("ProductId");
-
-                    b.Property<int>("SupplierId");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("EndDate");
+
+                    b.Property<int>("ProductId");
 
                     b.Property<DateTime>("StartDate");
 
                     b.Property<int>("Status");
 
-                    b.HasKey("ProductId", "SupplierId");
+                    b.Property<int>("SupplierId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("SupplierId");
 

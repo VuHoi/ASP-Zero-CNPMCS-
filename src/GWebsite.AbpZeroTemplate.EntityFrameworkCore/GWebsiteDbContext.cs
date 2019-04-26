@@ -317,8 +317,8 @@ namespace GWebsite.AbpZeroTemplate.EntityFrameworkCore
             });
             modelBuilder.Entity<Bidding>(entity =>
             {
-                entity
-                      .HasKey(oi => new { oi.ProductId, oi.SupplierId });
+                //entity
+                //      .HasKey(oi => new { oi.ProductId, oi.SupplierId });
                 entity
                        .HasOne(p => p.Product)
                         .WithMany(i => i.Biddings)
