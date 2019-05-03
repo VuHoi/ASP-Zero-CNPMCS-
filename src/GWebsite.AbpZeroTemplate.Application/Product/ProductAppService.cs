@@ -1,15 +1,20 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.Authorization;
+using Abp.AutoMapper;
 using Abp.Domain.Repositories;
+using Abp.Extensions;
+using Abp.Linq.Extensions;
 using GWebsite.AbpZeroTemplate.Application;
+using GWebsite.AbpZeroTemplate.Application.Share.MenuClients;
+using GWebsite.AbpZeroTemplate.Application.Share.MenuClients.Dto;
 using GWebsite.AbpZeroTemplate.Application.Share.Products;
 using GWebsite.AbpZeroTemplate.Application.Share.Products.Dto;
 using GWebsite.AbpZeroTemplate.Core.Authorization;
 using GWebsite.AbpZeroTemplate.Core.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 
 namespace GWebsite.AbpZeroTemplate.Web.Core
@@ -24,10 +29,13 @@ namespace GWebsite.AbpZeroTemplate.Web.Core
             _productRepository = productRepository;
         }
 
-        public async Task<ListResultDto<ProductDto>> GetProductsAsync()
+        public async Task<PagedResultDto<ProductDto>> GetProductsAsync(GetMenuClientInput input)
         {
-            var items = await _productRepository.GetAllListAsync();
-            return new ListResultDto<ProductDto>(
+            var query =  _productRepository.GetAllIncluding().Include(p=>p.Image).Include(p=>p.Biddings).ThenInclude(p=>p.Supplier);
+            var totalCount = await query.CountAsync();
+            var items = await query.OrderBy(input.Sorting).PageBy(input).ToListAsync();
+            return new PagedResultDto<ProductDto>(
+             totalCount,
              items.Select(item => ObjectMapper.Map<ProductDto>(item)).ToList());
         }
 

@@ -14,11 +14,13 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Bidding
 
         Task<PagedResultDto<SupplierDto>> GetSupplierByProductAsync(Pagination pagination,int productId);
 
-        Task<PagedResultDto<SupplierDto>> GetAllBiddingPassAsync(Pagination pagination);
+        Task<PagedResultDto<SupplierDto>> GetAllBiddingPassAsync();
         Task<BiddingProduct> BiddingProductAsync(BiddingSaved biddingSaved);
         Task<BiddingProduct> ChangeOwnerBiddingProductAsync(BiddingSaved biddingSaved);
+        Task<SupplierDto> CreateSupplierAsync(SupplierSavedDto supplierSavedDto);
+        Task<SupplierDto> UpdateSupplierAsync(SupplierSavedDto supplierSavedDto);
+        Task<SupplierDto> GetSupplierByIdAsync(EntityDto<int> input);
+        Task DeleteBiddingAsync(EntityDto<int> input);
 
-        //Task<string> ApprovePurchaseAsync(EntityDto<int> input);
-        //Task DeletePurchaseAsync(EntityDto<int> input);
     }
 }

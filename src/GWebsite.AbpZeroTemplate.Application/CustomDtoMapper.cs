@@ -19,6 +19,8 @@ namespace GWebsite.AbpZeroTemplate.Applications
             configuration.CreateMap<Purchase, PurchaseDto>();
             configuration.CreateMap<Bidding, BiddingProduct>();
             configuration.CreateMap<Supplier, SupplierDto>();
+            configuration.CreateMap<SupplierSavedDto, SupplierDto>();
+            
             configuration.CreateMap<PurchaseDto, Purchase>();
             configuration.CreateMap<MenuClient, MenuClientListDto>();
             configuration.CreateMap<CreateMenuClientInput, MenuClient>();
@@ -44,12 +46,30 @@ namespace GWebsite.AbpZeroTemplate.Applications
                     {
                         p.PurchaseProducts.Add(pc);
                     }
-
+                    
                     var removedProduct =
                         p.PurchaseProducts.Where(c => pr.PurchaseProducts.FirstOrDefault(x => x.ProductId == c.ProductId).Equals(null)).ToList();
                     foreach (var pc in removedProduct)
                     {
                         p.PurchaseProducts.Remove(pc);
+                    }
+                });
+            configuration.CreateMap<SupplierSavedDto, Supplier>()
+                .ForMember(p => p.Biddings, opt => opt.Ignore())
+                .AfterMap((pr, p)=>
+                {
+                    var biddingAdded = pr.Biddings.Where(id => p.Biddings.All(pc => pc.ProductId != id.ProductId && pc.SupplierId != id.SupplierId))
+                                            .Select(id => new Bidding() { ProductId = id.ProductId, SupplierId = pr.Id, StartDate = id.StartDate, EndDate = id.EndDate, Status = id.Status }).ToList();
+                    foreach (var pc in biddingAdded)
+                    {
+                        p.Biddings.Add(pc);
+                    }
+
+                    var removedProduct =
+                        p.Biddings.Where(c => pr.Biddings.FirstOrDefault(x => x.ProductId == c.ProductId && x.SupplierId==c.SupplierId).Equals(null)).ToList();
+                    foreach (var pc in removedProduct)
+                    {
+                        p.Biddings.Remove(pc);
                     }
                 });
         }

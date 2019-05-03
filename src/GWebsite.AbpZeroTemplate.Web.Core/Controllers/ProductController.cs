@@ -1,4 +1,5 @@
 ﻿using Abp.Application.Services.Dto;
+using GWebsite.AbpZeroTemplate.Application.Share.MenuClients.Dto;
 using GWebsite.AbpZeroTemplate.Application.Share.Products;
 using GWebsite.AbpZeroTemplate.Application.Share.Products.Dto;
 using Microsoft.AspNetCore.Mvc;
@@ -17,9 +18,9 @@ namespace GWebsite.AbpZeroTemplate.Application.Controllers
         }
 
         [HttpGet]
-        public async Task<ListResultDto<ProductDto>> GetProducts()
+        public async Task<ListResultDto<ProductDto>> GetProducts(GetMenuClientInput input)
         {
-            return await _ProductAppService.GetProductsAsync();
+            return await _ProductAppService.GetProductsAsync(input);
         }
 
         [HttpGet]
