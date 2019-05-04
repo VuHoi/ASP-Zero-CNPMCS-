@@ -35,7 +35,11 @@ namespace GWebsite.AbpZeroTemplate.Application.Controllers
         {
             return await _SupplierAppService.GetAllBiddingPassAsync();
         }
-
+        [HttpGet]
+        public async Task<ListResultDto<SupplierDto>> GetAllSuppliers()
+        {
+            return await _SupplierAppService.GetAllSupplierAsync();
+        }
         [HttpGet]
         public async Task<SupplierDto> GetSupplierById(EntityDto<int> input)
         {
