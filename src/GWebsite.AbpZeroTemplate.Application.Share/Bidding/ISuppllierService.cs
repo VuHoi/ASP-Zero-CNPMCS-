@@ -20,6 +20,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Bidding
         Task<SupplierDto> CreateSupplierAsync(SupplierSavedDto supplierSavedDto);
         Task<SupplierDto> UpdateSupplierAsync(SupplierSavedDto supplierSavedDto);
         Task<SupplierDto> GetSupplierByIdAsync(EntityDto<int> input);
+        Task<PagedResultDto<SupplierDto>> GetAllSupplierAsync();
         Task DeleteBiddingAsync(EntityDto<int> input);
 
     }

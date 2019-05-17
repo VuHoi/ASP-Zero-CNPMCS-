@@ -92,6 +92,19 @@ namespace GWebsite.AbpZeroTemplate.Web.Core.Suppliers
              totalCount,
              select.Select(item => ObjectMapper.Map<SupplierDto>(item)).ToList());
         }
+
+        public async Task<PagedResultDto<SupplierDto>> GetAllSupplierAsync()
+        {
+            var query = _supplierRepository.GetAllIncluding().Include(p => p.Biddings).ThenInclude(p => p.Product);
+            //query = query.Select(p => p.Biddings.Select(pc => pc.Status == 1));
+            //&& p.Biddings.FirstOrDefault(b => b.Status == 1) != null;
+            var totalCount = await query.CountAsync();
+            //var items = await select.Skip(pagination.Start * pagination.NumberItem).Take(pagination.NumberItem).ToListAsync();
+            return new PagedResultDto<SupplierDto>(
+             totalCount,
+             query.Select(item => ObjectMapper.Map<SupplierDto>(item)).ToList());
+        }
+
         /// <summary>
         /// 
         /// </summary>
