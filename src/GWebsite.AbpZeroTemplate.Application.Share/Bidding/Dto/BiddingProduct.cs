@@ -12,7 +12,7 @@ namespace GWebsite.AbpZeroTemplate.Application.Share.Bidding.Dto
     {
         public int SupplierId { get; set; }
         public int ProductId { get; set; }
-        public ProductDto Product { get; set; }
+        public ProductTitleDto Product { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int Status { get; set; }

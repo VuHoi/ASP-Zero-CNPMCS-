@@ -115,7 +115,7 @@ namespace GWebsite.AbpZeroTemplate.Web.Core.Suppliers
         public async Task<PagedResultDto<SupplierDto>> GetSupplierByProductAsync(Pagination pagination, int productId)
         {
             var query = _supplierRepository.GetAllIncluding().Include(p => p.Biddings).ThenInclude(p => p.Product).ThenInclude(p => p.Image);
-            var select = query.Where(p => p.Biddings.All(b => b.ProductId == productId && b.Status != 0));
+            var select = query.Where(p => p.Biddings.FirstOrDefault(b => b.ProductId == productId)!=null);
             var totalCount = await select.CountAsync();
             var items = await select.Skip(pagination.Start * pagination.NumberItem).Take(pagination.NumberItem).ToListAsync();
             return new PagedResultDto<SupplierDto>(
